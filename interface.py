@@ -24,17 +24,18 @@ def print_query(view_name:str):
 
 menu_choice =''
 while menu_choice != 'Z':
-    menu_choice = input('\nWelcome to the Computers database\n\n'
-                        'Type the letter for the query that you would like to see.:\n\n' 
-                        'A: View all data\n'
-                        'B: Brand, model, year, price\n'
-                        'C: Model, price\n'
-                        'D: Model, RAM, speed\n'
-                        'E: Model, year\n'
-                        'F: Type, brand, country\n'
-                        'G: Year, model, speed (ordered by year ASC)\n'
-                        'H: Type, model, speed, RAM, year, price (ordered by price ASC)\n'
-                        'Z: Exit\n\nType option here: ')
+    menu_choice = input("\nWelcome to the Computers database\n\n"
+                        "Type the letter for the query that you would like to see.:\n\n" 
+                        "A: View all data in Computers\n"
+                        "B: Show the computers' year of creation and price\n"
+                        "C: Show the computers' model and price\n"
+                        "D: Show the computers' RAM and speed\n"
+                        "E: Show the computers' year of creation\n"
+                        "F: Show the computers' brand, and country of creation\n"
+                        "G: Show the computers' Year of creation, model, speed (ordered by year ASC)\n"
+                        "H: Show the computers' speed, RAM, year, and price (ordered by price ASC)\n"
+                        "Z: Exit\n\nType option here: ")
+    print('\n')
     menu_choice = menu_choice.upper()
     if menu_choice == 'A':
         print_query('All data')
