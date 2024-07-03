@@ -53,3 +53,6 @@ while menu_choice != 'Z':
         print_query('Year, model, speed')
     elif menu_choice == 'H':
         print_query('Type, model, speed, RAM, year, price')
+    elif menu_choice != 'A'or'B'or'C'or'D'or'E'or'F'or'G'or'H'or'Z':
+        print("This option is not available\n"
+              "Please try a different option")
