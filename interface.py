@@ -23,8 +23,9 @@ def print_query(view_name:str):
     db.close()
 
 menu_choice =''
+print("\nWelcome to the Computers database\n\n")
 while menu_choice != 'Z':
-    menu_choice = input("\nWelcome to the Computers database\n\n"
+    menu_choice = input(
                         "Type the letter for the query that you would like to see.:\n\n" 
                         "A: View all data in Computers\n"
                         "B: Show the computers' year of creation and price\n"
